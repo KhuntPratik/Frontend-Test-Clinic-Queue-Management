@@ -7,7 +7,7 @@ const LOGIN_URL = `${BASE_URL}/auth/login`
 
 export default function Login() {
   const [email, setEmail] = useState('')
-  
+
   const [password, setPassword] = useState('')
   const navigate = useNavigate()
 
@@ -31,7 +31,7 @@ export default function Login() {
 
       if (role === 'admin') navigate('/adminhome')
       if (role === 'doctor') navigate('/doctorhome')
-      if (role === 'patient') navigate('/patienthome')
+      if (role === 'patient') navigate('/patient/appointments')
       if (role === 'receptionist') navigate('/receptionisthome')
     } catch (err) {
       alert('Invalid email or password')

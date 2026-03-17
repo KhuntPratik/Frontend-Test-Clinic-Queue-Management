@@ -90,11 +90,7 @@ export default function Navbar() {
 
                 {role === 'patient' && (
                   <>
-                    <li className="nav-item">
-                      <NavLink className="nav-link" to="/patienthome">
-                        Dashboard
-                      </NavLink>
-                    </li>
+                    
                     <li className="nav-item">
                       <NavLink className="nav-link" to="/patient/book">
                         Book Appinmetments

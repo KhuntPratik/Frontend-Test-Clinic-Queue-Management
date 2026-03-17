@@ -3,7 +3,6 @@ import Login from './Auth/login'
 import DoctorHome from './Doctor/doctor'
 import AdminHome from './Admin/admin'
 import AdminUsers from './Admin/AdminUsers'
-import PatientHome from './Patient/patient'
 import ReceptionistHome from './Receptionist/receptionist'
 import Navbar from './navbar'
 import AddPrescription from './Doctor/AddPrescription'
@@ -74,14 +73,7 @@ function App() {
               </RequireRole>
             }
           />
-          <Route
-            path="/patienthome"
-            element={
-              <RequireRole role="patient">
-                <PatientHome />
-              </RequireRole>
-            }
-          />
+        
           <Route
             path="/patient/book"
             element={
