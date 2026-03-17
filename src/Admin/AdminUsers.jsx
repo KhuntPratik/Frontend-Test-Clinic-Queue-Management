@@ -30,15 +30,7 @@ export default function AdminUsers() {
   return (
     <div className="min-vh-100 bg-light">
       <div className="container py-4">
-        <div className="d-flex align-items-center justify-content-between mb-3">
-          <h1 className="h4 mb-0">Users</h1>
-          <button
-            className="btn btn-outline-primary btn-sm"
-            onClick={handleFetchUsers}
-          >
-            Refresh
-          </button>
-        </div>
+        
 
         <div className="card">
           <div className="card-body">
